@@ -1,8 +1,27 @@
-﻿@{
+﻿@model List<WorkCategory>
+@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-5 bg-primary text-white text-center">
+    <h1>İş Başvuru Sistemi</h1>
+    <p>Hayalindeki işe kavşumak bir tuşa kadar yakın.</p>
 </div>
+
+<div class="container mt-5">
+    <div class="row">
+		@foreach (var workcategory in Model)
+		{
+            <div class="col">
+                <div class="card" style="width:400px">
+                    <div class="card-body">
+                        <h4 class="card-title">@workcategory.WorkName</h4>
+                        <p class="card-text">@workcategory.WorkDescription</p>
+                        <a href="#" class="btn btn-primary">Başvur</a>
+                    </div>
+                </div>
+            </div>
+		}
+       
+    </div>
+</div>
+
