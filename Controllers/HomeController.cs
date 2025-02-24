@@ -18,6 +18,9 @@ public class HomeController : Controller
     {
         return View(_context.WorkCategory.ToList());
     }
+    public IActionResult Resume() 
+    {
+        return View(); 
+    }
 
-    
 }
