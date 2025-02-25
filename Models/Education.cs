@@ -3,6 +3,7 @@
     public class Education
     {
         public int Id { get; set; }
+        public int PersonalId { get; set; }
         public string School { get; set; }
         public string Degree { get; set; }
         public string Field { get; set; }

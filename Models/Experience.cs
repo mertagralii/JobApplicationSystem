@@ -3,6 +3,7 @@
     public class Experience
     {
         public int Id { get; set; }
+        public int PersonalId { get; set; }
         public string Title { get; set; }
         public string Company { get; set; }
         public string Location { get; set; }

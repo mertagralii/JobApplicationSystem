@@ -5,7 +5,7 @@ namespace JobApplicationSystem.Data
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Resume> Resume { get; set; }
+      
 
         public DbSet<Skill> Skill { get; set; }
 

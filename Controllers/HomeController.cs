@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using JobApplicationSystem.Models;
 using JobApplicationSystem.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace JobApplicationSystem.Controllers;
 
@@ -20,6 +21,7 @@ public class HomeController : Controller
     }
     public IActionResult Resume() 
     {
+        
         return View(); 
     }
 
