@@ -19,10 +19,10 @@ public class HomeController : Controller
     {
         return View(_context.WorkCategory.ToList());
     }
-    public IActionResult Resume() 
+    public IActionResult WorkDetail(int Id) 
     {
-        
-        return View(); 
+        var workCategoryDetail = _context.WorkCategory.Find(Id);
+        return View();
     }
 
 }

@@ -16,6 +16,24 @@
 
         public string About { get; set; }
 
-       
+        public List<Certificate>? Certificates { get; set; }
+
+        public List<Education> Educations { get; set; }
+
+        public List<Experience>? Experiences { get; set; }
+
+        public List<Language>? Languages { get; set; }
+
+        public List<Link>? Links { get; set; }
+
+        public List<Project>? Projects { get; set; }
+
+        public List<Referance>? Referances { get; set; }
+
+        public List<Skill>? Skills { get; set; }
+
+
+
+
     }
 }
